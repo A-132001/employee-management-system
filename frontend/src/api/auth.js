@@ -1,5 +1,4 @@
 import axios from "axios";
-
 const API_BASE_URL = "http://127.0.0.1:8000/api";
 
 export const login = async (credentials) => {
@@ -26,7 +25,7 @@ export const logout = () => {
     localStorage.removeItem("access_token");
     localStorage.removeItem("refresh_token");
     localStorage.removeItem("user_role");
-    window.location.reload(); // Refresh page to apply changes
+    // window.location.reload(); // Refresh page to apply changes
 };
 
 export const getUserRole = () => {

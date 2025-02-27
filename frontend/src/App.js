@@ -23,7 +23,7 @@ function App() {
 
   const handleLogout = () => {
     logout();
-    setUserRole(null);
+    setUserRole("");
   };
 
 
